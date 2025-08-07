@@ -2,6 +2,7 @@ function toggleMode() {
   const html = document.documentElement
   html.classList.toggle('light')
 
+
   // pegar a tag img
   const img = document.querySelector("#profile img")
 
@@ -22,3 +23,34 @@ function toggleMode() {
 
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const openPopupBtn = document.getElementById("open-popup-btn")
+  const closePopupBtn = document.querySelector(".close-btn")
+  const popupContainer = document.getElementById("download-popup")
+
+  if (openPopupBtn && closePopupBtn && popupContainer) {
+    // Abre o pop-up
+    openPopupBtn.addEventListener("click", () => {
+      popupContainer.classList.add("show")
+    })
+
+    // Fecha o pop-up quando o 'x' é clicado
+    closePopupBtn.addEventListener("click", () => {
+      popupContainer.classList.remove("show")
+    })
+
+    // Fecha o pop-up se o usuário clicar fora dele
+    window.addEventListener("click", (event) => {
+      if (event.target === popupContainer) {
+        popupContainer.classList.remove("show")
+      }
+    })
+
+    // Fecha o pop-up ao apertar a tecla 'Esc'
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        popupContainer.classList.remove("show")
+      }
+    })
+  }
+})

@@ -8,21 +8,28 @@
   --text-color: white;
   --bg-url: url(./assets/bg-dm.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(255, 255, 255, 0.05);
+  --stroke-color-popup: rgba(12, 12, 12, 0);
+  --surface-color: rgba(255, 255, 255, 0);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
+  --surface-color-hover-popup: rgba(28, 28, 28, 0.8);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-image: url(./assets/moon-stars.svg);
+  --text-color-popup: white;
 }
 
 .light {
   --text-color: black;
   --bg-url: url(./assets/bg-lm.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
+  --stroke-color-popup: rgba(0, 0, 0, 0);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --surface-color-hover-popup: rgba(0, 0, 0, 0.7);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-image: url(./assets/sun.svg);
+  --text-color-popup: white;
 }
+
 
 body {
   background: var(--bg-url) no-repeat center center/cover fixed;
@@ -131,6 +138,34 @@ ul li a:hover {
   border: 1.5px solid var(--text-color);
 }
 
+ul li button {
+  display: block;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+  width: 100%;
+
+  background-color: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+
+  transition: background 0.2s;
+}
+
+/* pseudo-selector */
+ul li button:hover {
+  background-color: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
 /* social links */
 #social-links {
   display: flex;
@@ -159,3 +194,88 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+
+
+/* Container do Pop-up */
+.popup-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.10s, opacity 0.10s easy; 
+  display: flex; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var( --stroke-color-popup);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Nova classe para mostrar o pop-up */
+.popup-container.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Conteúdo do Pop-up */
+.popup-content {
+  background-color: var(--surface-color-hover-popup); /* Use a cor da sua paleta */
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 5px 15px black;
+  border: 2px solid;
+  border-image: linear-gradient(to right, darkblue, purple, yellow, green) 1;
+}
+
+.popup-content h2 {
+  margin-bottom: 20px;
+  }
+
+/* Botão de Fechar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--close-color);
+}
+
+.close-btn:hover {
+  color: var(--close-highlight);
+}
+
+/* Botões de Download */
+.popup-download-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: var(--text-color-popup);
+
+  background: transparent;
+  border: 2px solid;
+  border-radius: 5px;
+
+
+  transition: all 0.3s ease;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#download-button-pt:hover {
+  border: 2px solid;
+  border-image: linear-gradient(to right, darkblue, green, yellow) 1;
+}
+
+#download-button-en:hover {
+  border: 2px solid; 
+  border-image: linear-gradient(to right, red, blue) 1;
+}
+

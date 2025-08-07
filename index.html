@@ -40,7 +40,8 @@
         </li>
 
         <li>
-          <a href="#">Baixar Currículo</a>
+          <!-- <a href="#">Baixar Currículo</a> -->
+          <button id="open-popup-btn">Baixar Currículo</button>
         </li>
 
         <li>
@@ -79,6 +80,22 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+
+    <div id="download-popup" class="popup-container">
+      <div class="popup-content">
+          <span class="close-btn">&times;</span>
+          <h3 id="select-text-color"></h3>
+          <a href="./assets/MA_CV_PT-BR.pdf" download="Marcelle_Alves_CV_PT.pdf" class="popup-download-btn" id="download-button-pt">
+              Português (PT-BR)
+          </a>
+          <a href="./assets/MA_CV_EN.pdf" download="Marcelle_Alves_CV_EN.pdf" class="popup-download-btn" id="download-button-en">
+              English (EN)
+          </a>
+      </div>
+  </div>
+
+
     <script src="./script.js"></script>
+
   </body>
 </html>
