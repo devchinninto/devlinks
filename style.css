@@ -8,26 +8,29 @@
   --text-color: white;
   --bg-url: url(./assets/bg-dm.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --stroke-color-popup: rgba(12, 12, 12, 0);
+  --stroke-color-popup: rgb(0, 0, 0, 0.7);
   --surface-color: rgba(255, 255, 255, 0);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
   --surface-color-hover-popup: rgba(28, 28, 28, 0.8);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-image: url(./assets/moon-stars.svg);
   --text-color-popup: white;
+  --close-color: white;
+  --close-highlight: rgba(255, 255, 255, 0.5);
 }
 
 .light {
   --text-color: black;
   --bg-url: url(./assets/bg-lm.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
-  --stroke-color-popup: rgba(0, 0, 0, 0);
+  --stroke-color-popup: rgba(0, 0, 0, 0.7);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --surface-color-hover-popup: rgba(0, 0, 0, 0.7);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-image: url(./assets/sun.svg);
   --text-color-popup: white;
+  --close-color: white
 }
 
 
