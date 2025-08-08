@@ -8,10 +8,11 @@
   --text-color: white;
   --bg-url: url(./assets/bg-dm.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --stroke-color-popup: rgb(0, 0, 0, 0.7);
+  --stroke-color-popup: rgba(0, 0, 0, 0.7);
   --surface-color: rgba(255, 255, 255, 0);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
-  --surface-color-hover-popup: rgba(28, 28, 28, 0.8);
+  --surface-color-popup: rgba(3, 0, 46, 1);
+  --surface-color-popup-hover: rgba(9, 0, 136, 0.8);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-image: url(./assets/moon-stars.svg);
   --text-color-popup: white;
@@ -26,7 +27,7 @@
   --stroke-color-popup: rgba(0, 0, 0, 0.7);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --surface-color-hover-popup: rgba(0, 0, 0, 0.7);
+  --surface-color-popup: #010048;
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-image: url(./assets/sun.svg);
   --text-color-popup: white;
@@ -198,12 +199,23 @@ footer {
   font-size: 14px;
 }
 
+footer p {
+  font-size: 12px;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
+footer p a {
+  color: rgba(255, 255, 255, 0.5);
+  font-style: normal;
+}
 
 /* Container do Pop-up */
 .popup-container {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0.10s, opacity 0.10s easy; 
+  transition: visibility 0.10s, opacity 0.10s linear;
   display: flex; 
   position: fixed;
   top: 0;
@@ -224,7 +236,7 @@ footer {
 
 /* Conteúdo do Pop-up */
 .popup-content {
-  background-color: var(--surface-color-hover-popup); /* Use a cor da sua paleta */
+  background-color: var(--surface-color-popup); /* Use a cor da sua paleta */
   padding: 30px;
   width: 300px;
   text-align: center;
@@ -275,10 +287,12 @@ footer {
 #download-button-pt:hover {
   border: 2px solid;
   border-image: linear-gradient(to right, darkblue, green, yellow) 1;
+  background-color: var(--surface-color-popup-hover);
 }
 
 #download-button-en:hover {
   border: 2px solid; 
   border-image: linear-gradient(to right, red, blue) 1;
+  background-color: var(--surface-color-popup-hover);
 }
 
