@@ -1,37 +1,53 @@
-# Portfólio (Dev Links)
-## 🚀 Sobre o Projeto
+<h1 align='center'> Portfólio (Dev Links)</h1>
+<h2 align='center'> 
+🚀 Sobre o Projeto
+</h2>
 
-Este projeto é um **_portfólio pessoal_**, desenvolvido a partir dos conhecimentos adquiridos no curso **Discover** da **Rocketseat**. O objetivo é demonstrar habilidades em **HTML**, **CSS** e **JavaScript**, com foco na criação de interfaces responsivas e na implementação de funcionalidades que aprimoram a experiência do usuário, como o seletor de tema e o pop-up interativo.
+<p align='center'>
+<img alt='License' src='./assets/cover.png'>
+</p>
 
-## ✨ Recursos
-O portfólio conta com diversas funcionalidades interativas e um design moderno:
+<p align='center'>
+Este projeto é um <strong><em>cartão de visitas digital</em></strong>, desenvolvido no programa <strong><em>Discover</em></strong>, um curso <em>exclusivo e gratuito</em> promovido pela <strong>Rocketseat</strong>.<br>
+Embora a base do projeto tenha sido criada no programa <strong>Discover</strong>, da <strong>Rocketseat</strong>, fiz alterações para personalizá-lo e refletir minha identidade visual. <strong><em>Um exemplo notável é a implementação do pop-up para download do currículo em duas línguas diferentes</strong></em>.
+</p>
 
-- **Alternância de Tema:** Um seletor na página permite alternar entre o modo claro e escuro, utilizando variáveis CSS para uma gestão de cores eficiente.
+<h2 align='center'>✨ Recursos</h2>
+<p align='center'>O portfólio conta com diversas funcionalidades interativas e um design moderno:
+</p>
 
-- **Pop-up de Download:** Um modal interativo desenvolvido com JavaScript que oferece ao usuário a opção de baixar o CV em português (PT-BR) ou inglês (EN).
+- <strong>Alternância de Tema:</strong> Um seletor na página permite alternar entre o modo claro e escuro, utilizando variáveis CSS para uma gestão de cores eficiente.
 
-- **Controles de Pop-up:** O modal pode ser fechado de forma intuitiva, clicando no botão "X", fora da janela ou simplesmente pressionando a tecla Esc.
+- <strong>Pop-up de Download:</strong> Um modal interativo desenvolvido com JavaScript que oferece ao usuário a opção de baixar o CV em português (PT-BR) ou inglês (EN).
 
-- **Design Responsivo:** O layout se adapta perfeitamente a diferentes tamanhos de tela (desktop e mobile), garantindo uma navegação fluida em qualquer dispositivo.
+- <strong>Controles de Pop-up:</strong> O modal pode ser fechado de forma intuitiva, clicando no botão "X", fora da janela ou simplesmente pressionando a tecla Esc.
 
-- **Animações e Transições:** Utilização de transições CSS suaves para uma interação mais agradável e profissional.
+- <strong>Design Responsivo:</strong> O layout se adapta perfeitamente a diferentes tamanhos de tela (desktop e mobile), garantindo uma navegação fluida em qualquer dispositivo.
+
+- <strong>Animações e Transições:</strong> Utilização de transições CSS suaves para uma interação mais agradável e profissional.
 
 
-## 🛠️ Tecnologias Utilizadas
+<h2 align='center'>🛠️ Tecnologias Utilizadas</h2>
+<p align='center'>
 As seguintes tecnologias foram usadas para construir o projeto:
+</p>
 
-- **HTML5**
+- <strong>HTML5</strong>
 
-- **CSS3**
+- <strong>CSS3</strong>
 
-- **JavaScript**
+- <strong>JavaScript</strong>
 
-- **Git**
+- <strong>Git</strong>
 
-- **GitHub Pages** _(para hospedagem)_
+- <strong>GitHub Pages</strong> <em>(para hospedagem)</em>
 
-## 📁 Como Executar o Projeto
-Para visualizar o projeto localmente, siga estes passos:
+- <strong>Figma</strong>
+
+
+<h2 align='center'>📁 Como Executar o Projeto</h2>
+<p align='center'>Para visualizar o projeto localmente, siga estes passos:
+</p>
 
 - Clone este repositório para sua máquina local:
 
@@ -43,7 +59,19 @@ Para visualizar o projeto localmente, siga estes passos:
 
 - Abra o arquivo `index.html` em seu navegador de preferência.
 
-## ✉️ Contato
-LinkedIn: https://www.linkedin.com/in/marcelle-alves-724608315/
 
-GitHub: https://github.com/devchinninto
+<h2 align='center'>🏷️ Layout</h2>
+
+
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/1187422022288947321/devlinks-projeto-discover). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+
+<h2 align='center'>📝 Licença</h2>
+
+<p align='center'>Esse projeto está sob a licença MIT.<br>
+---</p>
+
+<h2 align='center'>✉️ Contato</h2>
+
+
+- LinkedIn: https://www.linkedin.com/in/marcelle-alves-724608315/
+- GitHub: https://github.com/devchinninto
