@@ -37,7 +37,7 @@
 
 body {
   background: var(--bg-url) no-repeat center center/cover fixed;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body * {
@@ -326,7 +326,7 @@ footer p a {
 }
 
 /* media queries */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   :root {
     --bg-url: url(./assets/bg-dm.png);
   }
@@ -334,4 +334,4 @@ footer p a {
   .light {
     --bg-url: url(./assets/bg-lm.png);
   }
-}
+} */
