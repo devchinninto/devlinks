@@ -88,11 +88,15 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  animation: slide-out 0.2s;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -141,6 +145,11 @@ ul li a {
 ul li a:hover {
   background-color: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
+  outline: 5px solid var(--highlight-color);
+}
+
+button:hover {
+  outline: 5px solid var(--highlight-color);
 }
 
 ul li button {
@@ -297,4 +306,22 @@ footer p a {
   background-color: var(--surface-color-popup-hover);
 }
 
-/*media queries*/
+/* animation */
+@keyframes slide-in {
+  from {
+  left: 0;
+  }
+  to {
+  left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+  
+}
