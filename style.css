@@ -19,8 +19,7 @@
   --close-color: white;
   --close-highlight: rgba(255, 255, 255, 0.5);
 
-  --bg-dark-mode: #ffffff00;
-  --bg-light-mode: #ffffff80;
+  background-color: #05050D;
 }
 
 .light {
@@ -34,7 +33,9 @@
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-image: url(./assets/sun.svg);
   --text-color-popup: white;
-  --close-color: white
+  --close-color: white;
+
+  background-color: #d1b8ec;
 }
 
 
