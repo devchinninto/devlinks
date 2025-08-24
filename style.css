@@ -18,6 +18,9 @@
   --text-color-popup: white;
   --close-color: white;
   --close-highlight: rgba(255, 255, 255, 0.5);
+
+  --bg-dark-mode: #ffffff00;
+  --bg-light-mode: #ffffff80;
 }
 
 .light {
@@ -176,13 +179,11 @@ ul li button {
   transition: background 0.2s;
 }
 
-/* pseudo-selector */
 ul li button:hover {
   background-color: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
 
-/* social links */
 #social-links {
   display: flex;
   justify-content: center;
@@ -223,7 +224,6 @@ footer p a {
   font-style: normal;
 }
 
-/* Container do Pop-up */
 .popup-container {
   visibility: hidden;
   opacity: 0;
@@ -240,15 +240,13 @@ footer p a {
   z-index: 100;
 }
 
-/* Nova classe para mostrar o pop-up */
 .popup-container.show {
   visibility: visible;
   opacity: 1;
 }
 
-/* Conteúdo do Pop-up */
 .popup-content {
-  background-color: var(--surface-color-popup); /* Use a cor da sua paleta */
+  background-color: var(--surface-color-popup);
   padding: 30px;
   width: 300px;
   text-align: center;
@@ -262,7 +260,6 @@ footer p a {
   margin-bottom: 20px;
   }
 
-/* Botão de Fechar */
 .close-btn {
   position: absolute;
   top: 10px;
@@ -276,7 +273,6 @@ footer p a {
   color: var(--close-highlight);
 }
 
-/* Botões de Download */
 .popup-download-btn {
   display: block;
   width: 100%;
@@ -308,7 +304,6 @@ footer p a {
   background-color: var(--surface-color-popup-hover);
 }
 
-/* animation */
 @keyframes slide-in {
   from {
   left: 0;
