@@ -12,14 +12,14 @@ function toggleMode() {
       "alt",
       "Foto de Marcelle Alves sorrindo, usando óculos escuro preto e camisa preta, e o fundo da imagem é um cinza escuro."
     )
-    themeColorMeta.setAttribute('content', '#ffffff80')
+    themeColorMeta.setAttribute('content', '#ffffff')
   } else {
     img.setAttribute('src', './assets/avatar.png')
     img.setAttribute(
       "alt",
       "Desenho de Marcelle Alves sorrindo, usando óculos com armação transparente e camisa preta, e o fundo da imagem amarelo."
     )
-    themeColorMeta.setAttribute('content', '#ffffff00')
+    themeColorMeta.setAttribute('content', '#ffffff')
   }
 }
 
