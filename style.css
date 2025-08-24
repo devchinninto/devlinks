@@ -55,6 +55,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 1;
+  overflow: hidden;
   background-image: transparent;
 
   backdrop-filter: blur(60px);
