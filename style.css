@@ -12,7 +12,7 @@
   --surface-color: rgba(255, 255, 255, 0);
   --surface-color-hover: rgba(255, 255, 255, 0.1);
   --surface-color-popup: rgba(3, 0, 46, 1);
-  --surface-color-popup-hover: rgba(9, 0, 136, 0.8);
+  --surface-color-popup-hover:#2f377c;
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-image: url(./assets/moon-stars.svg);
   --text-color-popup: white;
@@ -29,7 +29,6 @@
   --stroke-color-popup: rgba(0, 0, 0, 0.7);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.1);
-  --surface-color-popup: #010048;
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-image: url(./assets/sun.svg);
   --text-color-popup: white;
@@ -40,19 +39,16 @@
 
 body * {
   font-family: "Inter", sans-serif;
-  color: var(--text-color);
+  color: var(--text-color);;
 }
 
 body {
   background: var(--bg-url) no-repeat center center/cover fixed;
   min-height: 100vh;
-  position: relative;
 }
 
 #bg-blur{
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
   backdrop-filter: blur(60px);
@@ -250,14 +246,14 @@ footer p a {
 }
 
 .popup-content {
-  background-color: var(--surface-color-popup);
+  background: linear-gradient(45deg, #0b0d1f, #1f2550, #161a33);
   padding: 30px;
   width: 300px;
   text-align: center;
   position: relative;
   box-shadow: 0 5px 15px black;
   border: 2px solid;
-  border-image: linear-gradient(to right, darkblue, purple, yellow, green) 1;
+  border-image: linear-gradient(to right, #2d2b31, #5c5c65, #6c707f) 1;
 }
 
 .popup-content h2 {
@@ -285,11 +281,11 @@ footer p a {
   text-decoration: none;
   color: var(--text-color-popup);
 
-  background: transparent;
   border: 2px solid;
-  border-radius: 5px;
+  border-image: linear-gradient(90deg, #6c707f, #8494ac) 1;
+  border-radius: .2rem;
 
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 
   font-weight: 600;
   cursor: pointer;
@@ -297,13 +293,13 @@ footer p a {
 
 #download-button-pt:hover {
   border: 2px solid;
-  border-image: linear-gradient(to right, darkblue, green, yellow) 1;
+  border-color: #8494ac;
   background-color: var(--surface-color-popup-hover);
 }
 
 #download-button-en:hover {
   border: 2px solid;
-  border-image: linear-gradient(to right, red, blue) 1;
+  border-color: #8494ac;
   background-color: var(--surface-color-popup-hover);
 }
 
