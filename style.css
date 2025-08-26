@@ -6,40 +6,40 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-dm.jpg);
+  --bg-url: url(./assets/bg-dm-blur.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --stroke-color-popup: rgba(0, 0, 0, 0.7);
+  --bg-blur-popup: rgba(0, 0, 0, 0.7);
   --surface-color: rgba(255, 255, 255, 0);
   --surface-color-hover: rgba(255, 255, 255, 0.1);
-  --surface-color-popup: rgba(3, 0, 46, 1);
-  --surface-color-popup-hover: rgba(9, 0, 136, 0.8);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-image: url(./assets/moon-stars.svg);
-  --text-color-popup: white;
-  --close-color: white;
-  --close-highlight: rgba(255, 255, 255, 0.5);
+  --text-color-popup: #EFEFEF;
+  --text-color-popup-hover: rgba(255, 255, 255, 0);
+  --close-btn-color: white;
+  --close-btn-highlight: rgba(255, 255, 255, 0.5);
+
+  --surface-color-popup: rgb(29, 29, 29);
+  --stroke-color-popup: rgba(179, 179, 179, 0.5);
+  --surface-color-popup-btn: rgba(242, 242, 242, 0.1);
+  --stroke-color-popup-btn: rgba(140, 140, 140, 0.2);
+  --surface-color-popup-hover: rgba(166, 166, 166, 0.5);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-lm.jpg);
+  --bg-url: url(./assets/bg-lm-blur.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
-  --stroke-color-popup: rgba(0, 0, 0, 0.7);
+  --bg-blur-popup: rgba(0, 0, 0, 0.7);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.1);
-  --surface-color-popup: #010048;
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-image: url(./assets/sun.svg);
-  --text-color-popup: white;
-  --close-color: white
+  --close-btn-color: white;
 }
-
 
 body {
   background: var(--bg-url) no-repeat center center/cover fixed;
   min-height: 100vh;
-  backdrop-filter: blur(60px);
-  --webkit-backdrop-filter: blur(60px);
 }
 
 body * {
@@ -50,37 +50,34 @@ body * {
 #container {
   width: 100%;
   max-width: 588px;
-  margin: 56px auto 0px;
+  margin: 3.5rem auto 0;
   padding: 0 24px;
 }
 
-/* profile */
-
 #profile {
   text-align: center;
-  padding: 24px;
+  padding: 1.5rem;
 }
 
 #profile img {
-  width: 112px;
+  width: 7rem;
 }
 
 #profile p {
   font-weight: 500;
-  line-height: 24px;
-  margin-top: 8px;
+  line-height: 1.5rem;
+  margin-top: .5rem;
 }
 
-/* switch */
 #switch {
   position: relative;
-  width: 64px;
-  margin: 4px auto;
+  width: 4rem;
+  margin: .25rem auto;
 }
 
 #switch button {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   background: white var(--switch-image) no-repeat center;
   border: 0;
   border-radius: 50%;
@@ -98,13 +95,13 @@ body * {
 }
 
 #switch button:hover {
-  outline: 8px solid var(--highlight-color);
+  outline: .5rem solid var(--highlight-color);
 }
 
 #switch span {
   display: block;
-  width: 64px;
-  height: 24px;
+  width: 4rem;
+  height: 1.5rem;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   backdrop-filter: blur(4px);
@@ -112,15 +109,14 @@ body * {
   border-radius: 9999px;
 }
 
-/* links */
 ul {
   list-style: none;
 
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 
-  padding: 24px 0;
+  padding: 1.5rem 0;
 }
 
 ul li a {
@@ -128,11 +124,11 @@ ul li a {
   align-items: center;
   justify-content: center;
 
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
 
   background-color: var(--surface-color);
   border: 1px solid var(--stroke-color);
-  border-radius: 8px;
+  border-radius: .5rem;
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -143,7 +139,6 @@ ul li a {
   transition: background 0.2s;
 }
 
-/* pseudo-selector */
 ul li a:hover {
   background-color: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
@@ -159,7 +154,7 @@ ul li button {
   align-items: center;
   justify-content: center;
 
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
   width: 100%;
 
   background-color: var(--surface-color);
@@ -176,26 +171,24 @@ ul li button {
   transition: background 0.2s;
 }
 
-/* pseudo-selector */
 ul li button:hover {
   background-color: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
 
-/* social links */
 #social-links {
   display: flex;
   justify-content: center;
-  padding: 24px 0;
+  padding: 1.5rem 0;
 
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 #social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: 1rem;
 
   transition: background 0.2s;
   border-radius: 50%;
@@ -206,115 +199,17 @@ ul li button:hover {
 }
 
 footer {
-  padding: 24px 0;
+  padding: 1.5rem 0;
   text-align: center;
-  font-size: 14px;
+  font-size: .75rem;
 }
 
-footer p {
-  font-size: 12px;
-  margin-top: 6px;
-  color: rgba(255, 255, 255, 0.5);
-  font-style: italic;
-}
-
-footer p a {
-  color: rgba(255, 255, 255, 0.5);
-  font-style: normal;
-}
-
-/* Container do Pop-up */
-.popup-container {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.10s, opacity 0.10s linear;
-  display: flex; 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var( --stroke-color-popup);
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-}
-
-/* Nova classe para mostrar o pop-up */
-.popup-container.show {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* Conteúdo do Pop-up */
-.popup-content {
-  background-color: var(--surface-color-popup); /* Use a cor da sua paleta */
-  padding: 30px;
-  width: 300px;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 5px 15px black;
-  border: 2px solid;
-  border-image: linear-gradient(to right, darkblue, purple, yellow, green) 1;
-}
-
-.popup-content h2 {
-  margin-bottom: 20px;
-  }
-
-/* Botão de Fechar */
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-  color: var(--close-color);
-}
-
-.close-btn:hover {
-  color: var(--close-highlight);
-}
-
-/* Botões de Download */
-.popup-download-btn {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  text-decoration: none;
-  color: var(--text-color-popup);
-
-  background: transparent;
-  border: 2px solid;
-  border-radius: 5px;
-
-
-  transition: all 0.3s ease;
-
-  font-weight: 600;
-  cursor: pointer;
-}
-
-#download-button-pt:hover {
-  border: 2px solid;
-  border-image: linear-gradient(to right, darkblue, green, yellow) 1;
-  background-color: var(--surface-color-popup-hover);
-}
-
-#download-button-en:hover {
-  border: 2px solid; 
-  border-image: linear-gradient(to right, red, blue) 1;
-  background-color: var(--surface-color-popup-hover);
-}
-
-/* animation */
 @keyframes slide-in {
   from {
-  left: 0;
+    left: 0;
   }
   to {
-  left: 50%;
+    left: 50%;
   }
 }
 
@@ -326,14 +221,3 @@ footer p a {
     left: 0;
   }
 }
-
-/* media queries */
-/* @media (max-width: 768px) {
-  :root {
-    --bg-url: url(./assets/bg-dm.png);
-  }
-
-  .light {
-    --bg-url: url(./assets/bg-lm.png);
-  }
-} */
