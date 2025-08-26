@@ -8,33 +8,20 @@
   --text-color: white;
   --bg-url: url(./assets/bg-dm-blur.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --bg-blur-popup: rgba(0, 0, 0, 0.7);
   --surface-color: rgba(255, 255, 255, 0);
   --surface-color-hover: rgba(255, 255, 255, 0.1);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-image: url(./assets/moon-stars.svg);
-  --text-color-popup: #EFEFEF;
-  --text-color-popup-hover: rgba(255, 255, 255, 0);
-  --close-btn-color: white;
-  --close-btn-highlight: rgba(255, 255, 255, 0.5);
-
-  --surface-color-popup: rgb(29, 29, 29);
-  --stroke-color-popup: rgba(179, 179, 179, 0.5);
-  --surface-color-popup-btn: rgba(242, 242, 242, 0.1);
-  --stroke-color-popup-btn: rgba(140, 140, 140, 0.2);
-  --surface-color-popup-hover: rgba(166, 166, 166, 0.5);
 }
 
 .light {
   --text-color: black;
   --bg-url: url(./assets/bg-lm-blur.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
-  --bg-blur-popup: rgba(0, 0, 0, 0.7);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.1);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-image: url(./assets/sun.svg);
-  --close-btn-color: white;
 }
 
 body {
@@ -207,8 +194,10 @@ footer {
 @keyframes slide-in {
   from {
     left: 0;
+    left: 0;
   }
   to {
+    left: 50%;
     left: 50%;
   }
 }
