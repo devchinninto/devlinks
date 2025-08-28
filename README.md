@@ -47,7 +47,7 @@ As seguintes tecnologias foram usadas para construir o projeto:
 
 <h2 align='center'>📁 Como acessar o Projeto</h2>
 <p align='center'> 
-  O projeto pode ser acessado [neste link](https://devchinninto.github.io/devlinks).
+  O projeto pode ser acessado [aqui](https://devchinninto.github.io/devlinks/).
 </p>
 
 <h2 align='center'>🏷️ Layout</h2>
