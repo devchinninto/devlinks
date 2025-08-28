@@ -45,20 +45,10 @@ As seguintes tecnologias foram usadas para construir o projeto:
 - <strong>Figma</strong>
 
 
-<h2 align='center'>📁 Como Executar o Projeto</h2>
-<p align='center'>Para visualizar o projeto localmente, siga estes passos:
+<h2 align='center'>📁 Como acessar o Projeto</h2>
+<p align='center'> 
+  O projeto pode ser acessado [neste link](https://devchinninto.github.io/devlinks).
 </p>
-
-- Clone este repositório para sua máquina local:
-
-- `git clone https://github.com/devchinninto/devlinks.git`
-
-- Navegue até a pasta do projeto:
-
-- `cd devlinks`
-
-- Abra o arquivo `index.html` em seu navegador de preferência.
-
 
 <h2 align='center'>🏷️ Layout</h2>
 
