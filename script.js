@@ -5,9 +5,9 @@ function toggleMode() {
   const img = document.querySelector("#profile img")
 
   if (html.classList.contains("light")) {
-    img.setAttribute("src", "./assets/pfp-outdoor.png")
+    img.setAttribute("src", "./assets/pfp.png")
   } else {
-    img.setAttribute("src", "./assets/pfp-outdoor.png")
+    img.setAttribute("src", "./assets/pfp.png")
   }
 
   if (html.classList.contains("light")) {
