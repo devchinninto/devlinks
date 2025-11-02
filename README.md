@@ -3,9 +3,6 @@
 🚀 Sobre o Projeto
 </h2>
 
-<p align='center'>
-<img alt='License' src='./assets/cover.png'>
-</p>
 
 <p align='center'>
 Este projeto é um <strong><em>cartão de visitas digital</em></strong>, desenvolvido no programa <strong><em>Discover</em></strong>, um curso <em>exclusivo e gratuito</em> promovido pela <strong>Rocketseat</strong>.<br>
@@ -45,20 +42,8 @@ As seguintes tecnologias foram usadas para construir o projeto:
 - <strong>Figma</strong>
 
 
-<h2 align='center'>📁 Como Executar o Projeto</h2>
-<p align='center'>Para visualizar o projeto localmente, siga estes passos:
-</p>
-
-- Clone este repositório para sua máquina local:
-
-- `git clone https://github.com/devchinninto/devlinks.git`
-
-- Navegue até a pasta do projeto:
-
-- `cd devlinks`
-
-- Abra o arquivo `index.html` em seu navegador de preferência.
-
+<h2 align='center'>📁 Como acessar o Projeto</h2>
+O projeto pode ser acessado [aqui](https://devchinninto.github.io/devlinks/).
 
 <h2 align='center'>🏷️ Layout</h2>
 
